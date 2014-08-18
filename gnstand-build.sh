@@ -2,6 +2,8 @@
 # gnstand-build.sh: magic to build a standalone GN
 # Jashank Jeremy <jashank@rulingia.com>
 
+set -e
+
 cd gn.stand
 
 if [ `uname -s` = 'Linux' ]

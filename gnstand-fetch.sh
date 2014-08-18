@@ -2,6 +2,8 @@
 # gnstand-fetch.sh: magic to fetch bits needed to build GN
 # Jashank Jeremy <jashank@rulingia.com>
 
+set -e
+
 mkdir -p gn.stand || exit 1
 cd gn.stand
 
