@@ -34,7 +34,7 @@ fi
 $GN gen --args='is_clang=false' out/GNBoot && \
     sed -i.bak -e 's/g++ \$ldflags/g++ -fuse-ld=gold \$ldflags/' \
                -e 's/g++ -shared/g++ -fuse-ld=gold -shared/' out/GNBoot/toolchain.ninja && \
-    ninja -C out/GNBoot gn -j 15
+    ninja -C out/GNBoot gn -j 4
 
 # Use bootstrapped GN to build GN
 out/GNBoot/gn gen --args='is_clang=false' out/GNStrap && \
