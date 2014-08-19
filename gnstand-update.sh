@@ -25,8 +25,8 @@ target_rev=289113
 # testing
 (cd testing && \
     svn up -r $target_rev && \
-    cd gtest && svn up && \
-    cd gmock && svn up )
+    (cd gtest && svn up) && \
+    (cd gmock && svn up) )
 
 # third_party
 (cd third_party && \
