@@ -14,7 +14,7 @@ then
 fi
 
 cr_trunk=http://src.chromium.org/chrome/trunk
-target_rev=289113
+target_rev=290689
 
 ### Generate top-level build configuration files.
 cat >.gn <<EOF

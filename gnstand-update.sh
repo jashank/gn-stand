@@ -13,7 +13,7 @@ then
 fi
 
 cr_trunk=http://src.chromium.org/chrome/trunk
-target_rev=289113
+target_rev=290689
 
 ### Update the necessary bits of Cr sources.
 (cd base && svn up -r $target_rev )
@@ -25,8 +25,8 @@ target_rev=289113
 # testing
 (cd testing && \
     svn up -r $target_rev && \
-    cd gtest && svn up && \
-    cd gmock && svn up )
+    (cd gtest && svn up) && \
+    (cd gmock && svn up) )
 
 # third_party
 (cd third_party && \
